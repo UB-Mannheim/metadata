@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
             <mets:mets
                 xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:mets="http://www.loc.gov/METS/"
+                xmlns:mods="http://www.loc.gov/mods/v3"
                 xmlns:dv="http://dfg-viewer.de/profil-der-metadaten/"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <mets:dmdSec ID="dmd_01">
@@ -82,7 +84,7 @@
                 </mets:dmdSec>
                 <!-- Administrative Metadaten -->
                 <mets:amdSec ID="amd_01">
-                    <mets:rightsMD>
+                    <mets:rightsMD ID="rights_01">
                         <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="DVRIGHTS">
                             <mets:xmlData>
                                 <dv:rights>
@@ -95,7 +97,7 @@
                             </mets:xmlData>
                         </mets:mdWrap>
                     </mets:rightsMD>
-                    <mets:digiprovMD>
+                    <mets:digiprovMD ID="digiprov_01">
                         <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="DVLINKS">
                             <mets:xmlData>
                                 <dv:links>
