@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>    
             <mets:mets
                 xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:mets="http://www.loc.gov/METS/"
+                xmlns:mods="http://www.loc.gov/mods/v3"
                 xmlns:dv="http://dfg-viewer.de/profil-der-metadaten/"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <mets:dmdSec ID="dmd_0001">
@@ -78,7 +80,7 @@
                         </mets:xmlData>
                     </mets:mdWrap>
                 </mets:dmdSec>
-                <mods:dmdSec ID="dmd_0002">
+                <mets:dmdSec ID="dmd_0002">
                     <mets:mdWrap MDTYPE="MODS">
                         <mets:xmlData>
                             <mods:mods>
@@ -102,8 +104,8 @@
 
                         </mets:xmlData>
                     </mets:mdWrap>
-                </mods:dmdSec>
-                <mods:dmdSec ID="dmd_0003">
+                </mets:dmdSec>
+                <mets:dmdSec ID="dmd_0003">
                     <mets:mdWrap MDTYPE="MODS">
                         <mets:xmlData>
                             <mods:mods>
@@ -126,8 +128,8 @@
                             </mods:mods>
                         </mets:xmlData>
                     </mets:mdWrap>
-                </mods:dmdSec>
-                <mods:dmdSec ID="dmd_0004">
+                </mets:dmdSec>
+                <mets:dmdSec ID="dmd_0004">
                     <mets:mdWrap MDTYPE="MODS">
                         <mets:xmlData>
                             <mods:mods>
@@ -150,7 +152,7 @@
                             </mods:mods>
                         </mets:xmlData>
                     </mets:mdWrap>
-                </mods:dmdSec>
+                </mets:dmdSec>
                 <mets:amdSec ID="amd_01">
                     <mets:rightsMD ID="rights_01">
                         <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="DVRIGHTS">
@@ -176,6 +178,62 @@
                         </mets:mdWrap>
                     </mets:digiprovMD>
                 </mets:amdSec>
+                <mets:fileSec>
+                    <mets:fileGrp USE="DEFAULT">
+                        <mets:file ID="FILE_0001_DEFAULT" MIMETYPE="image/jpeg">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Image/00000001.jpg"/>
+                        </mets:file>
+                        <mets:file ID="FILE_0002_DEFAULT" MIMETYPE="image/jpeg">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Image/00000002.jpg"/>
+                        </mets:file>
+                        <mets:file ID="FILE_0003_DEFAULT" MIMETYPE="image/jpeg">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Image/00000003.jpg"/>
+                        </mets:file>
+                        <mets:file ID="FILE_0004_DEFAULT" MIMETYPE="image/jpeg">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Image/00000004.jpg"/>
+                        </mets:file>
+                    </mets:fileGrp>
+                    <mets:fileGrp USE="FULLTEXT">
+                        <mets:file ID="FILE_0001_FULLTEXT" MIMETYPE="text/xml">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Volltext/00000001.xml"/>
+                        </mets:file>
+                        <mets:file ID="FILE_0002_FULLTEXT" MIMETYPE="text/xml">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Volltext/00000002.xml"/>
+                        </mets:file>
+                        <mets:file ID="FILE_0003_FULLTEXT" MIMETYPE="text/xml">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Volltext/00000003.xml"/>
+                        </mets:file>
+                        <mets:file ID="FILE_0004_FULLTEXT" MIMETYPE="text/xml">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Volltext/00000004.xml"/>
+                        </mets:file>
+                    </mets:fileGrp>
+                            <mets:fileGrp USE="THUMBS">
+                        <mets:file ID="FILE_0001_THUMBS" MIMETYPE="image/jpeg">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/image/00000001.jpg"/>
+                        </mets:file>
+                        <mets:file ID="FILE_0002_THUMBS" MIMETYPE="image/jpeg">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Image/00000002.jpg"/>
+                        </mets:file>
+                        <mets:file ID="FILE_0003_THUMBS" MIMETYPE="image/jpeg">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Image/00000003.jpg"/>
+                        </mets:file>
+                        <mets:file ID="FILE_0004_THUMBS" MIMETYPE="image/jpeg">
+                            <mets:FLocat LOCTYPE="URL"
+                                xlink:href="http://Link/zum/Image/00000004.jpg"/>
+                        </mets:file>
+                    </mets:fileGrp>
+                </mets:fileSec>
                 <mets:structMap TYPE="LOGICAL">
                     <mets:div ID="log_001" TYPE="newspaper" LABEL="Die Test-Zeitung">
                         <mets:mptr LOCTYPE="URL" xlink:href="http://LinkZumMETSdatensatz/GA"/>
@@ -245,60 +303,4 @@
                     <mets:smLink xlink:to="PYHS_0004" xlink:from="log_032"/>
                     <mets:smLink xlink:to="PYHS_0004" xlink:from="log_028"/>
                 </mets:structLink>
-                <mets:fileSec>
-                    <mets:fileGrp USE="DEFAULT">
-                        <mets:file ID="FILE_0001_DEFAULT" MIMETYPE="image/jpeg">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Image/00000001.jpg"/>
-                        </mets:file>
-                        <mets:file ID="FILE_0002_DEFAULT" MIMETYPE="image/jpeg">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Image/00000002.jpg"/>
-                        </mets:file>
-                        <mets:file ID="FILE_0003_DEFAULT" MIMETYPE="image/jpeg">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Image/00000003.jpg"/>
-                        </mets:file>
-                        <mets:file ID="FILE_0004_DEFAULT" MIMETYPE="image/jpeg">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Image/00000004.jpg"/>
-                        </mets:file>
-                    </mets:fileGrp>
-                    <mets:fileGrp USE="FULLTEXT">
-                        <mets:file ID="FILE_0001_FULLTEXT" MIMETYPE="text/xml">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Volltext/00000001.xml"/>
-                        </mets:file>
-                        <mets:file ID="FILE_0002_FULLTEXT" MIMETYPE="text/xml">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Volltext/00000002.xml"/>
-                        </mets:file>
-                        <mets:file ID="FILE_0003_FULLTEXT" MIMETYPE="text/xml">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Volltext/00000003.xml"/>
-                        </mets:file>
-                        <mets:file ID="FILE_0004_FULLTEXT" MIMETYPE="text/xml">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Volltext/00000004.xml"/>
-                        </mets:file>
-                    </mets:fileGrp>
-                            <mets:fileGrp USE="THUMBS">
-                        <mets:file ID="FILE_0001_THUMBS" MIMETYPE="image/jpeg">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/image/00000001.jpg"/>
-                        </mets:file>
-                        <mets:file ID="FILE_0002_THUMBS" MIMETYPE="image/jpeg">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Image/00000002.jpg"/>
-                        </mets:file>
-                        <mets:file ID="FILE_0003_THUMBS" MIMETYPE="image/jpeg">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Image/00000003.jpg"/>
-                        </mets:file>
-                        <mets:file ID="FILE_0004_THUMBS" MIMETYPE="image/jpeg">
-                            <mets:FLocat LOCTYPE="URL"
-                                xlink:href="http://Link/zum/Image/00000004.jpg"/>
-                        </mets:file>
-                    </mets:fileGrp>
-                </mets:fileSec>
             </mets:mets>            
